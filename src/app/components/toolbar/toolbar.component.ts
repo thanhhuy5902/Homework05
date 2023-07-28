@@ -40,6 +40,7 @@ export class ToolbarComponent implements OnInit {
   dialog!: ElementRef<HTMLDialogElement>;
   cdr = inject(ChangeDetectorRef);
   openDialog() {
+    Animation 
     this.dialog.nativeElement.showModal();
     this.cdr.detectChanges();
   }
