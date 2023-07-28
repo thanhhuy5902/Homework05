@@ -27,7 +27,7 @@ export class AppComponent implements OnInit{
     {
       id: Date.now(),
       name: 'DC x LW Love Varsity Jacket',
-      price: 120,
+      price: 12000,
       brand: 'Yeezy',
       image: 'https://bizweb.dktcdn.net/100/369/010/products/1-5.jpg?v=1686560543000',
     },

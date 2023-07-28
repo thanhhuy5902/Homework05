@@ -71,16 +71,7 @@
         placeholder="Enter name"
       />
     </div>
-    <div class="form-group">
-      <label for="brand">Brand</label>
-      <input
-        type="text"
-        class="form-control"
-        id="description"
-        formControlName="brand"
-        placeholder="Enter brand"
-      />
-    </div>
+
     <div class="form-group">
       <label for="price">Price</label>
       <input
@@ -102,7 +93,14 @@
       />
     </div>
   </form>
-  <button mat-button mat-dialog-close (click)="closeDialog()">Close</button>
+  <button
+    mat-flat-button
+    color="primary"
+    mat-dialog-close
+    (click)="closeDialog()"
+  >
+    Close
+  </button>
   <button
     (click)="addProduct(productForm.value)"
     mat-flat-button
