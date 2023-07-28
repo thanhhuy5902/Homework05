@@ -1,0 +1,16 @@
+<div class="product">
+  <div class="row1">
+    <div class="product-item" *ngFor="let item of productList">
+      <div class="imageproduct">
+        <img [src]="item.image" alt="" />
+      </div>
+      <div class="name">
+        <p>{{ item.name }}</p>
+      </div>
+      <div class="price">
+        <p>${{ item.price }}</p>
+      </div>
+      <button mat-button (click)="delete(item.id)">delete</button>
+    </div>
+  </div>
+</div>
